@@ -17,10 +17,13 @@ public class CourseServicesImpl implements  ICourseServices{
         return courseRepository.findAll();
     }
 
+    //modifies les services (CourseServicesImpl
     @Override
     public Course addCourse(Course course) {
+        System.out.println("📢 Ajout d'un nouveau cours : " + course.getLevel());
         return courseRepository.save(course);
     }
+
 
     @Override
     public Course updateCourse(Course course) {
@@ -32,5 +35,7 @@ public class CourseServicesImpl implements  ICourseServices{
         return courseRepository.findById(numCourse).orElse(null);
     }
 
+
+    
 
 }
