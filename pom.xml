@@ -15,7 +15,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>gestion-station-skii</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-RELEASE</version>
     <name>gestion-station-skii</name>
     <description>Gestion Station Skii</description>
 
@@ -90,6 +90,9 @@
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.6.9</version>
         </dependency>
+
+       
+
     </dependencies>
 
     <build>
@@ -109,5 +112,13 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+  <repository>
+    <id>deploymentRepo</id>
+    <name>Nexus Repository</name>
+    <url>http://localhost:8081/repository/maven-releases/</url>
+  </repository>
+</distributionManagement>
+
 
 </project>
