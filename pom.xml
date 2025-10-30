@@ -15,7 +15,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>gestion-station-skii</artifactId>
-    <version>0.0.1-RELEASE</version>
+<version>0.0.2-RELEASE</version>
     <name>gestion-station-skii</name>
     <description>Gestion Station Skii</description>
 
