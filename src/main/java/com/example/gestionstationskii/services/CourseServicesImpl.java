@@ -6,24 +6,23 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @AllArgsConstructor
 @Service
-public class CourseServicesImpl implements  ICourseServices{
+public class CourseServicesImpl implements ICourseServices {
 
-    private ICourseRepository courseRepository;
+    private final ICourseRepository courseRepository;
 
     @Override
     public List<Course> retrieveAllCourses() {
         return courseRepository.findAll();
     }
 
-    //modifies les services (CourseServicesImpl
     @Override
     public Course addCourse(Course course) {
         System.out.println("📢 Ajout d'un nouveau cours : " + course.getLevel());
         return courseRepository.save(course);
     }
-
 
     @Override
     public Course updateCourse(Course course) {
@@ -35,7 +34,9 @@ public class CourseServicesImpl implements  ICourseServices{
         return courseRepository.findById(numCourse).orElse(null);
     }
 
-
-    
-
+    // ✅ Ajout de la méthode manquante
+    @Override
+    public void deleteCourse(Long numCourse) {
+        courseRepository.deleteById(numCourse);
+    }
 }
