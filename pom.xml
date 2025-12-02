@@ -15,10 +15,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>gestion-station-skii</artifactId>
-
-    <!-- ⭐ Version SNAPSHOT pour déployer dans nexus-snapshots -->
-    <version>0.0.3-SNAPSHOT</version>
-
+    <version>0.0.3-RELEASE</version>
     <name>gestion-station-skii</name>
     <description>Gestion Station Skii</description>
 
@@ -40,7 +37,7 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- MySQL Database -->
+        <!-- Database -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
@@ -93,44 +90,43 @@
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.6.9</version>
         </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
 
-            <!-- Spring Boot Plugin -->
+            <!-- Plugin Spring Boot -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- SonarQube Plugin -->
+
+            <!-- ✅ Plugin SonarQube -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.8.0.2131</version>
             </plugin>
 
+
         </plugins>
     </build>
 
-    <!-- ⭐ Déploiement Nexus : RELEASE + SNAPSHOT -->
     <distributionManagement>
-
-        <!-- Dépôt RELEASE -->
         <repository>
             <id>deploymentRepo</id>
             <name>Nexus Repository</name>
             <url>http://localhost:8086/repository/maven-releases/</url>
         </repository>
-
-        <!-- Dépôt SNAPSHOT -->
-        <snapshotRepository>
+         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>Nexus Snapshot Repository</name>
             <url>http://localhost:8086/repository/maven-snapshots/</url>
         </snapshotRepository>
-
     </distributionManagement>
+
+    
 
 </project>
