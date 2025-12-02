@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "cluster_name" {
   description = "Nom du cluster EKS"
   type        = string
-  default     = "my_new_cluster"
+  default     = "my_last_cluster"
 }
 
 variable "subnet_ids" {
