@@ -8,6 +8,6 @@ spec:
     app: my-spring-boot-app
   ports:
     - protocol: TCP
-      port: 8083
-      targetPort: 8083
+      port: 8087
+      targetPort: 8087
       nodePort: 30000
