@@ -1,4 +1,4 @@
-# 🚀 Spring Boot CI/CD Pipeline – Detailed Overview
+# 🚀 Spring Boot CI/CD Pipeline 
 
 This repository contains a **Spring Boot project** with a **complete DevOps CI/CD pipeline**.  
 The pipeline automates the **entire application lifecycle**: code build, testing, quality analysis, artifact management, containerization, deployment, and monitoring.
