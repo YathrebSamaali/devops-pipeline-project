@@ -8,14 +8,14 @@ pipeline {
 
     environment {
         terraformDir       = 'terraform'
-        clusterName        = 'my_last_cluster'
-        kubeConfigPath     = 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\test_aws\\.kube\\config'
-        awsCredentialsId   = 'aws-credentials'
-        registry           = "yathrebsamaali/docker-spring-boot"
-        registryCredential = 'dockerhub'
-        dockerImage        = ''
-        PROMETHEUS_URL     = 'http://localhost:9090'
-        GRAFANA_URL        = 'http://localhost:3000'
+ clusterName        = 'my_last_cluster' // Nom du cluster Kubernetes
+        kubeConfigPath     = 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\test_aws\\.kube\\config' // Chemin du kubeconfig
+        awsCredentialsId   = 'aws-credentials' // ID des credentials AWS dans Jenkins
+        registry           = "yathrebsamaali/docker-spring-boot" // Nom de l'image Docker
+        registryCredential = 'dockerhub'    // ID credential DockerHub dans Jenkins
+        dockerImage        = ''             // Variable qui stockera l'image Docker
+        PROMETHEUS_URL     = 'http://localhost:9090' // URL Prometheus
+        GRAFANA_URL        = 'http://localhost:3000' // URL Grafana
         PATH               = "C:\\Users\\Pc\\terraform;${env.PATH}" // Chemin Terraform si nécessaire
     }
 
