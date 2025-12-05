@@ -5,25 +5,26 @@ The pipeline automates the **entire application lifecycle**: code build, testing
 
 ---
 
-## 🔹 Features
 
-- **Continuous Integration (CI):**
-  - Automatic build from GitHub
-  - Unit testing (JUnit + mocks)
-  - Code quality analysis with SonarQube
-  - Artifact versioning and publishing to Nexus Repository
+## ✨ Features
 
-- **Continuous Delivery (CD):**
-  - Docker image build and push
-  - Deployment to Kubernetes cluster
-  - Rolling updates and health checks
+### 🔹 Continuous Integration (CI)
+- 🔨 Automatic build from GitHub  
+- 🧪 Unit testing (JUnit + mocks)  
+- 📊 Code quality analysis with SonarQube  
+- 📦 Artifact versioning and publishing to Nexus Repository  
 
-- **Infrastructure as Code (IaC):**
-  - Terraform scripts to provision Kubernetes cluster, networking, and nodes
+### 🔹 Continuous Delivery (CD)
+- 🐳 Docker image build and push  
+- ☸️ Deployment to Kubernetes cluster  
+- 🔄 Rolling updates & health checks  
 
-- **Monitoring & Observability:**
-  - Prometheus for metrics collection
-  - Grafana dashboards for CPU, memory, pods, services, and latency
+### 🔹 Infrastructure as Code (IaC)
+- 🏗️ Terraform scripts to provision Kubernetes cluster, networking, and nodes  
+
+### 🔹 Monitoring & Observability
+- 📈 Prometheus for metrics collection  
+- 📉 Grafana dashboards for CPU, memory, pods, services, and latency 
 
 ---
 
